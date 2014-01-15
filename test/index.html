@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css"/>
+    <script type="text/javascript" src="../node_modules/requirejs/require.js" data-main="../src/require.config.js"></script>
+    <script>
+        "use strict";
+        var assert,
+            should,
+            expect;
+
+        window.setTimeout(function () {
+
+            require(['../test/' + 'SpecRunner'], function(SpecRunner) {
+                assert = SpecRunner.chai.assert;
+                should = SpecRunner.chai.should();
+                expect = SpecRunner.chai.expect;
+
+                require(SpecRunner.specs, function () {
+                    SpecRunner.mocha.run();
+                });
+            });
+        }, 500);
+
+    </script>
+</head>
+<body>
+    <div id="mocha"></div>
+
+    <div id="test-app">
+        <div id="placeHolder"></div>
+        <div id="jsHeader" class="bBBHeader"></div>
+        <div id="jsMainContent" class="bBBAdmin">-</div>
+        <div class="jsFallbackErrors"></div>
+        <div id="jsIndicator" class="jsbIndicator"></div>
+        <div id="jsMessages"></div>
+    </div>
+</body>
+</html>

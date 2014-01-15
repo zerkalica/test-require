@@ -1,0 +1,26 @@
+{
+  "name": "test.project",
+  "version": "1.1.0",
+  "targetDir": "vendor/bower",
+  "dependencies": {
+    "requirejs": "2.1.x",
+    "jquery": "2.0.x",
+    "underscore": "1.4.x",
+    "backbone": "1.0.x",
+    "backbone.babysitter": "0.0.x",
+    "backbone.wreqr": "0.2.x",
+    "marionette": "1.0.x",
+    "backbone.syphon": "0.4.x"
+  },
+  "exportsOverride": {
+    "backbone": {
+      ".": "backbone.js"
+    },
+    "requirejs": {
+      ".": "require.js"
+    },
+    "underscore": {
+      ".": "underscore.js"
+    }
+  }
+}

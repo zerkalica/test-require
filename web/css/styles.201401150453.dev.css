@@ -1,0 +1,10 @@
+body{
+max-width:1200px;
+min-width:1000px;
+margin:0 auto;
+background:#eff5f9;
+font-family:"Arial",sans-serif;
+}
+.jsHidden{
+display:none;
+}
