@@ -1,0 +1,25 @@
+h3 Партнер
+form.bInlineForm
+    .bInlineForm__bElement
+        label.bInlineForm__bElement_eLabel(for="workName") Имя партнера
+        input.bInlineForm__bElement_eInput(name="workName", id="workName", type="text")
+
+    h3 Контакт
+    .bForm__bElementGroup
+        span.bForm__bElement
+            label.bForm__bElement__eLabel(for="name") Имя
+            input.bForm__bElement__eInput(name="name", id="name", type="text")
+        span.bForm__bElement
+            label.bForm__bElement__eLabel(for="phone") Телефон
+            input.bForm__bElement__eInput(name="phone", id="phone", type="text")
+        span.bForm__bElement
+            label.bForm__bElement__eLabel(for="email") Email
+            input.bForm__bElement__eInput(name="email", id="email", type="text")
+    .bForm__bElementGroup
+        .bForm__bElement
+            label(for="comment") Должность, зона отвественности, комментарии
+            input.bForm__bElement__eInput(name="comment", id="comment", type="text")
+
+.bForm__bButtons
+    button.jsSave Сохранить
+    button.jsCancel Отменить
