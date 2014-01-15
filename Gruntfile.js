@@ -283,11 +283,6 @@ module.exports = function (grunt) {
                 port: 8001,
                 baseDir: '<%= srcDir %>'
             }
-        },
-
-        bower: {
-            install: {
-            }
         }
     });
 
@@ -298,7 +293,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-bower-task');
 
     grunt.loadNpmTasks('grunt-contrib-watch');
 
